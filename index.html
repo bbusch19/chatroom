@@ -20,10 +20,10 @@
               <div class="message-header">
                   <p>What People are Saying</p>
               </div>
-              <p ng-repeat="message in messages">
+              <p ng-repeat="message in messages" class="actual-message">
                 &nbsp;{{message.text}}
                 <br />
-                &nbsp;<time class="timestamp" am-time-ago="message.createdAt"></time>
+                &nbsp;<time am-time-ago="message.createdAt" class="timestamp"></time>
               </p>
             </div>
           </section>
