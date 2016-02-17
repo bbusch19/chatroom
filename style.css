@@ -14,12 +14,55 @@ body {
   width: 75%;
   margin: 10px auto;
   background: rgba(255, 255, 255, 0.86);
-  padding: 5px;
+  padding: 0;
   border-radius: 10px;
+  /*border: 1px solid black;*/
+  box-shadow: 0 0px 5px rgba(0,0,0,.5);
+
+}
+
+.main-header {
+  height: 300px;
+  background: url('https://static.pexels.com/photos/1029/landscape-mountains-nature-clouds-large.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  box-shadow: 10px;
+  box-shadow: 0 0px 5px rgba(0,0,0,.5);
+
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  background: url('https://devmounta.in/img/badge.png') center no-repeat;
+  background-size: 75%;
+  border: 1px solid lightgrey;
+  border-radius: 75px;
+  margin: auto;
+  background-color: white;
+}
+
+.inner-content {
+  margin-top: -75px;
 }
 
 .main-container h1 {
   text-align: center;
+  font-family: sans-serif;
+  color: grey;
+}
+
+.main-container h4 {
+  text-align: center;
+  font-family: sans-serif;
+  color: grey;
+}
+
+.message-section {
+  width: 70%;
+  margin: 50px auto 0 auto;
 }
 
 .text-box {
@@ -28,7 +71,32 @@ body {
 }
 
 p{
-  text-align: center;
+  text-align: left;;
   margin: 3px 0;
   font-size: 17px;
+}
+
+.messages-container {
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: lightgrey;
+}
+
+.messages-container > p {
+  border-top: 1px solid lightgrey;
+  height: auto;
+  margin: 0;
+  background: white;
+}
+
+.message-header {
+  background: #e2e2e2;
+  height: 50px;
+  padding: 10px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.timestamp {
+
 }

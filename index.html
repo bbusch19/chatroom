@@ -7,16 +7,32 @@
   </head>
   <body ng-controller="mainCtrl">
     <div class="main-container">
-      <h1> DevMountain Chat Room </h1>
-      <form ng-submit="postData()">
-        <input class="form-control text-box" type="text" ng-model="message" placeholder="Message">
-      </form>
-      <div class="messages-container">
-        <p ng-repeat="message in messages"> {{message.text}} </p>
-      </div>
+      <div class="main-header"></div>
+      <section class="inner-content">
+          <div class="logo"></div>
+          <h1> DevMountain Chat Room </h1>
+          <h4>Say What You Will</h4>
+          <form ng-submit="postData()">
+            <input class="form-control text-box" type="text" ng-model="message" placeholder="Message">
+          </form>
+          <section class="message-section">
+            <div class="messages-container">
+              <div class="message-header">
+                  <p>What People are Saying</p>
+              </div>
+              <p ng-repeat="message in messages">
+                &nbsp;{{message.text}}
+                <br />
+                &nbsp;<time class="timestamp" am-time-ago="message.createdAt"></time>
+              </p>
+            </div>
+          </section>
+      </section>
     </div>
     <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-moment/0.9.0/angular-moment.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/mainCtrl.js"></script>
     <script src="js/parseService.js"></script>
